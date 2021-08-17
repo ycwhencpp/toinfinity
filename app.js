@@ -25,4 +25,24 @@ function createstars(){
     
 }
 createstars();
+// move rocket on moving cursor
+const rocket = document.querySelector(".rocket");
+// const rocket1 = document.querySelector(".:rocket");
+window.addEventListener("mousemove",rocketmove);
+
+ function rocketmove(e){
+    rocket.style.top=e.offsetY +"px";
+    rocket.style.left=e.offsetX +"px";
+   
+}
+// const stars=document.querySelectorAll("i");
+// stars.forEach((func)=>{
+    
+//     if(func.style.top==rocket.style.top){
+        
+//         console.log("tick");
+//     }
+// });
+// console.log(stars.values());
+
 
